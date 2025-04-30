@@ -1,0 +1,40 @@
+nav{
+    width: 65%;
+    min-height: 92.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: solid 2px #fff;
+    position: absolute;
+    left: 260px;
+    // background-color: blue;
+        &.nav-static {
+            position: static;
+            border-bottom: solid 2px #000;
+        }
+
+    .logo{
+        max-width: 92px;
+        min-height: 42px;
+        // background-color: indigo;
+    }
+
+    .links{
+        width: 332px;
+        display: flex;
+        justify-content: space-between;
+        // background-color: indigo;
+        color: #EE4367;
+        
+        a{
+            text-decoration: none;
+            font-family: GillSans;
+            color: #fff;
+
+            &.links-black {
+                color: black;
+            }
+        }
+    }
+}

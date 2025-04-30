@@ -1,0 +1,165 @@
+.home-content{
+    max-width: 1280px;
+    min-height: 1120px;
+    background-color: pink;
+    margin: 0 auto;
+
+    .home-hero{
+        min-height: 500px;
+        background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 156px;
+
+        .home-hero-text{
+            height: 280px;
+            width: 420px;
+            // background-color: blue;
+            margin: 0 auto;
+            
+            .home-header{
+                font-family: PTserif;
+                font-size: 40px;
+                color: #fff;
+                // background-color: pink;
+                text-align: center;
+            }
+            .text-two{
+                font-family: GillSansItalic;
+                font-size: 20px;
+                color: #EE4367;
+                text-align: center;
+                margin-bottom: 49px;
+            }
+            .text-three{
+                font-family: GillSansItalic;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 48px;
+            }
+            .home-button{
+                margin: 0 auto;
+                width: 121.62px;
+                height: 40.4px;
+                button{
+                height: 40.4px;
+                width: 121.62px;
+                background-color: #EE4367;
+                border: none;
+                font-family: GillSans;
+                color: #fff;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+    .home-quote{
+        height: 300px;
+        background-color: white;
+        padding-top: 77px;
+        .quote-holder{
+            min-height: 147px;
+            max-width: 70%;
+            // background-color: blue;
+            margin: 0 auto;
+            .quote{
+                max-width: 798px;
+                min-height: 90px;
+                font-family: GillSansBoldItalic;
+                font-size: 15px;
+                color: #FFD140;
+            }
+            .quote-name{
+            font-family: PTserif;
+            font-size: 15px;
+            color: #EE4367;
+            margin-bottom: -1px;
+            }
+            .name-title{
+                font-family: PTserif;
+                font-size: 10px;
+                color: #A8A8A8;
+            }
+        } 
+    }
+    .upcoming-events{
+        width: 100%;
+        min-height: 320px;
+        background-color: #540D6E;
+        padding: 40px;
+        .events-header{
+            text-decoration: underline;
+            font-family: GillSans;
+            font-size: 25px;
+            color: #fff;
+            letter-spacing: 2px;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 15px;
+            margin-bottom: 45px;
+        }
+        .events-header:after {
+            content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+        }
+        .event-holder-row{
+            max-width: 100%;
+            min-height: 130px;
+            // background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .event-holder{
+            width: 220px;
+            height: 124px;
+            // background-color: green;
+            display: flex;
+            justify-content: space-between;
+            .event-date{
+                width: 60px;
+                height: 60px;
+                background-color: #EE4367;
+                padding-top: 7px;
+                .date{
+                    font-family: GillSansBold;
+                    font-size: 22px;
+                    color: #fff;
+                    text-align: center;
+                    margin-bottom: -2px;
+                }
+                .month{
+                    font-family: GillSansLight;
+                    font-size: 12px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+            .event-paragraphs{
+                height: 124px;
+                width: 140px;
+                // background-color: orange;
+                .eventP-one{
+                    font-family: GillSans;
+                    font-size: 15px;
+                    color: #fff;
+                }
+                .eventP-two{
+                    font-family: GillSans;
+                    font-size: 13px;
+                    color: #EE4367;
+                }
+            }
+        }
+        }  
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .event-holder-row{
+        flex-direction: column;
+        flex: wrap;
+        .event-holder{
+            margin-bottom: 30px;
+        }
+    }
+}

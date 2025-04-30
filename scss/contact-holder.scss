@@ -1,0 +1,107 @@
+.contact-holder{
+    max-width: 1020px;
+    min-height: 720px;
+    // background-color: pink;
+    margin: 0 auto;
+    margin-top: 65.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .contact-header{
+        text-decoration: underline;
+        letter-spacing: 2px;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 15px;
+        font-family: GillSans;
+        font-size: 25px;
+    }
+    .contact-header:after {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0";
+    }
+    .contact-content{
+        max-width: 100%;
+        min-height: 530px;
+        // background-color: blue;
+        margin-top: 65.5px;
+        display: flex;
+        justify-content: space-between;
+
+        .contact-left{
+            max-width: 529px;
+            min-height: 530;
+            // background-color: green;
+            .contact-form{
+                max-width: 535px;
+                min-height: 530px;
+                // background-color: lightblue;
+                input{
+                    width: 529px;
+                    height: 60px;
+                    border: none;
+                    font-family: GillSans;
+                    font-size: 16px;
+                    background-color: #F5F5F5;
+                    margin-bottom: 21px;
+                    padding-left: 21px;
+                }
+                textarea{
+                    width: 529px;
+                    height: 199px;
+                    background-color: #F5F5F5;
+                    font-family: GillSans;
+                    font-size: 16px;
+                    padding-left: 21px;
+                    padding-top: 21px;
+                    border: none;
+                    color: #707070;
+                }
+                button{
+                    width: 167px;
+                    height: 60px;
+                    background-color: #EE4367;
+                    color: #fff;
+                    font-family: GillSans;
+                    font-size: 16px;
+                    border: none;
+                    margin-top: 21px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .contact-right{
+            width: 400px;
+            height: 442px;
+            background-color: gray;
+            background-image: url(../images/map.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .contact-holder{
+        height: 1200px;
+        .contact-content{
+            height: 1010px;
+            flex-direction: column;
+            flex: wrap;
+        }
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .contact-left{
+        width: 430px;
+        input{
+            max-width: 400px;
+        }
+        textarea{
+            max-width: 400px;
+        }
+    }
+
+}

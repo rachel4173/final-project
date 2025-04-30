@@ -1,0 +1,78 @@
+.blogthree-content {
+    max-width: 1020px;
+    min-height: 1020px;
+    // background-color: pink;
+    margin: 0 auto;
+    margin-top: 55.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .blogthree-hero {
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/blog.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .blogthree-date {
+            width: 155.25px;
+            height: 155.25px;
+            background-color: #EE4367;
+            padding-top: 25px;
+
+            .date {
+                font-family: GillSansBold;
+                font-size: 55px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: -2px;
+            }
+
+            .month {
+                font-family: GillSansLight;
+                font-size: 31px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+
+    .blogthree-headerone {
+        font-family: GillSans;
+        font-size: 20px;
+        color: #EE4367;
+        margin-top: 56px;
+    }
+
+    .blogthree-textone {
+        font-family: GillSans;
+        font-size: 20px;
+        color: #000;
+        margin-top: 30px;
+    }
+
+    .blogthree-texttwo {
+        font-family: GillSans;
+        font-size: 20px;
+        color: #000;
+        margin-top: 33px;
+    }
+
+    .blogthree-headertwo {
+        font-family: GillSans;
+        font-size: 20px;
+        color: #EE4367;
+        margin-top: 56px;
+    }
+
+    .blogthree-textthree {
+        font-family: GillSans;
+        font-size: 20px;
+        color: #000;
+        margin-top: 30px;
+    }
+}
