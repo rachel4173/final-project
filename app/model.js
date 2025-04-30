@@ -1,5 +1,5 @@
 export function getPageStuff (pageName) {
-    $.get(`../pages/${pageName}.html`, (data) => {
+    $.get(`pages/${pageName}.html`, (data) => {
         console.log(`Content loaded for ${pageName}`);
     })
 
@@ -18,8 +18,8 @@ export function getPageStuff (pageName) {
 
     $.get(href, function(data) {
         $("#app").html(data);
-    })
-    .fail(function() {
+    }).
+    fail(function() {
         $("#app").html("<p>Error loading gallery page.</p>");
     });
     });
